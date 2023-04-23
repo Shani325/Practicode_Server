@@ -39,7 +39,7 @@ app.UseSwaggerUI(options =>
 
 app.UseCors(MyAllowSpecificOrigins);
 
-app.MapGet("/", () => "Hello!");
+app.MapGet("/", () => "Hello! Server application is running");
 
 app.MapGet("/items",  (ToDoDbContext db) => db.Items.ToList());
 
